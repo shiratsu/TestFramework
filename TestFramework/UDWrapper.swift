@@ -146,6 +146,9 @@ public class UDWrapper{
         setObject(key: key, value: value)
     }
     
+    public class func setSwiftArray(key: String, value: [Any]) {
+        setObject(key: key, value: NSArray(array: value))
+    }
     
     public class func setDictionary(key: String, value: NSDictionary) {
         setObject(key: key, value: value)
