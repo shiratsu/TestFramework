@@ -8,12 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		56446859219F7B9400291960 /* TestFramework.h in Headers */ = {isa = PBXBuildFile; fileRef = 56446857219F7B9400291960 /* TestFramework.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5644686021A135F300291960 /* UDWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5644685F21A135F300291960 /* UDWrapper.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		56446854219F7B9400291960 /* TestFramework.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = TestFramework.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		56446857219F7B9400291960 /* TestFramework.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestFramework.h; sourceTree = "<group>"; };
 		56446858219F7B9400291960 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5644685F21A135F300291960 /* UDWrapper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UDWrapper.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -46,6 +48,7 @@
 		56446856219F7B9400291960 /* TestFramework */ = {
 			isa = PBXGroup;
 			children = (
+				5644685F21A135F300291960 /* UDWrapper.swift */,
 				56446857219F7B9400291960 /* TestFramework.h */,
 				56446858219F7B9400291960 /* Info.plist */,
 			);
@@ -95,6 +98,7 @@
 				TargetAttributes = {
 					56446853219F7B9400291960 = {
 						CreatedOnToolsVersion = 10.1;
+						LastSwiftMigration = 1010;
 					};
 				};
 			};
@@ -130,6 +134,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5644686021A135F300291960 /* UDWrapper.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -261,6 +266,7 @@
 		5644685D219F7B9400291960 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -278,6 +284,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "indival-inc..TestFramework";
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -286,6 +293,7 @@
 		5644685E219F7B9400291960 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
